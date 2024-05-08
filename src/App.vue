@@ -1,9 +1,10 @@
 <script >
 import AppSearch from "./components/AppSearch.vue";
-
+import AppMovie from "./components/AppMovie.vue";
 export default {
   components: {
     AppSearch,
+    AppMovie,
    
   },
 };
@@ -11,6 +12,7 @@ export default {
 
 <template>
 <AppSearch />
+<AppMovie />
 </template>
 
 <style scoped>
