@@ -1,18 +1,17 @@
 <script >
 import AppSearch from "./components/AppSearch.vue";
-import AppMovie from "./components/AppMovie.vue";
+import AppListMovie from "./components/AppListMovie.vue";
 export default {
   components: {
     AppSearch,
-    AppMovie,
-   
+    AppListMovie,
   },
 };
 </script>
 
 <template>
 <AppSearch />
-<AppMovie />
+<AppListMovie />
 </template>
 
 <style scoped>
