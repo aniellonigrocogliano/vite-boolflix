@@ -18,8 +18,10 @@ export default {
     
     <div class="row row-cols-4">
       <div class="col" v-for="movie in store.movieArray">
-       <h2>Titolo: {{movie.original_title}} </h2>
-       <h2>Titolo originale: {{movie.original_title}} </h2>
+       <p>Titolo: {{movie.title}} </p>
+       <p>Titolo originale: {{movie.original_title}} </p>
+       <p>Lingua: {{movie.original_language}} </p>
+       <p>Voto: {{movie.vote_average}} </p>
       </div>
     </div>
   </div>
