@@ -16,7 +16,7 @@ export default {
       imageName=Math.round(imageName);
       return new URL(`../assets/img/star/${imageName}.png`, import.meta.url).href;
     },
-    
+   
   },
 };
 </script>
@@ -27,6 +27,7 @@ export default {
       <h1>Film</h1>
     <div class="row row-cols-4">
       <div class="col" v-for="movie in store.movieArray">
+        <img :src="`https://image.tmdb.org/t/p/w342${movie.poster_path}`" :alt="movie.title"/>
        <p>Titolo: {{movie.title}} </p>
        <p>Titolo originale: {{movie.original_title}} </p>    
        <p>Lingua: <img :src="getImageFlag(movie.original_language)" :alt="movie.original_language" /> </p>
@@ -38,6 +39,7 @@ export default {
       <h1>Serie tv</h1>
     <div class="row row-cols-4">
       <div class="col" v-for="tv in store.tvArray">
+        <img :src="`https://image.tmdb.org/t/p/w342${tv.poster_path}`" :alt="tv.name"/>
        <p>Titolo: {{tv.name}} </p>
        <p>Titolo originale: {{tv.original_name}} </p>    
        <p>Lingua: <img :src="getImageFlag(tv.original_language)" :alt="tv.original_language" /> </p>
