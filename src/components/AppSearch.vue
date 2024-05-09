@@ -11,7 +11,6 @@ export default {
   methods: {
     getSearch() {
       this.store.itemSearch=this.itemSearch;
-      console.log("ho cliccato");
       const paramsObj = {
         api_key:this.store.keyId,
         query:this.store.itemSearch,
@@ -22,10 +21,7 @@ export default {
           params: paramsObj,
         })
         .then((resp) => {
-            console.log(resp);
             this.store.movieArray = resp.data.results;
-            console.log(this.store.movieArray);
-            console
         });
     },
 },
