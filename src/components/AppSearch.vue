@@ -23,6 +23,15 @@ export default {
         .then((resp) => {
             this.store.movieArray = resp.data.results;
         });
+
+        axios
+        .get("https://api.themoviedb.org/3/search/tv", {
+          params: paramsObj,
+        })
+        .then((resp) => {
+            this.store.tvArray = resp.data.results;
+        });
+
     },
 },
 };
