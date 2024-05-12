@@ -5,4 +5,8 @@ export const store = reactive({
     itemSearch: "",
     movieArray: [],
     tvArray: [],
+    idMovieTv: "",
+    sidebarOpen: false,
+    movieTvCast: [],
+    movieOrTv: "",
 });
